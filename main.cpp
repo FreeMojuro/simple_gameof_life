@@ -17,6 +17,7 @@ bool background_mode{false};
 int grid[num_rows][num_columns];
 
 void Reset() {
+  active_cells = 0;
   for (int r{0}; r < num_rows; r++) {
     for (int c{0}; c < num_columns; c++) {
       grid[r][c] = GetRandomValue(0, 1);
